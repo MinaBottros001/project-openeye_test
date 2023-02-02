@@ -1,11 +1,11 @@
 variable "region" {
   type    = string 
-  default = "eu-central-1"
+  default = "eu-west-2"
 }
 
 variable "ami" {
   type    = string 
-  default = "ami-015c25ad8763b2f11"
+  default = "ami-0d09654d0a20d3ae2"
 }
 
 variable "public_key" {
