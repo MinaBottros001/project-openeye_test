@@ -17,6 +17,8 @@
 8. Build the Infrastructure
 
 9. Connect to the created EC2 instence
+ 
+10. install requirments in the EC2 instence
 
 # Run the Application
 
