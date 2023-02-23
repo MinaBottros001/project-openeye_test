@@ -7,39 +7,57 @@ Terraform Steps:
 2. Create providers.tf file
 
 # Which containes the provider information
+
+
 3. Initialize the directory
 
 # Make sure you are in the directory that contains the tf files then do the follosing:
 terraform init
+
+
 4. Create main.tf file
 
 # That containes the resources that you will build ex: EC2 instence specs
+
+
 5. Create security.tf file
 
 # That containes the security group attached to the ec2 instence 
 # Also the keypair that will be used to connect on the ec2 instence
+
+
 6. Create variables.tf file
 
 # That containes all the variables with the data that will be shared on the version control
+
+
 7. Create terraform.tfvars file
 
 # That contains the variables that you will not share it on the version control
 # Add your public ssh key to the terraform.tfvars
 # Remember to add the tfvars file to .gitignore file
+
+
 8. Check what will be created before applying
 
 # This command is to check and show if there is an error before applying it 
 terraform plan
+
+
 9. Build the Infrastructure
 
 # This command is start building the infrastructure on the cloud  
 terraform apply # It will first show your the plan then you have to type yes to build
 # OR 
 terraform apply -auto-approve # To plan and apply changes without confirming
+
+
 10. Connect to the created EC2 instence
 
 # Make sure you are in the directory where the keypair was downloaded   
 ssh -i "file.pem" <ubuntu@PublicIP>
+
+
 11. Destroy created resources
 
 # This command will show you first what it will destroy then ask you to type yes to confirm
